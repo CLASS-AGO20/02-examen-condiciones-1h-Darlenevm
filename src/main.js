@@ -115,13 +115,13 @@ console.log(app.costoRenta(150));
 console.log(app.costoRenta(250));
 console.log("");
 
-console.log("Lunes terminacion placa: 0",app.puedeCircular(0,1));
-console.log("Martes terminacion placa: 1",app.puedeCircular(1,2));
-console.log("Miercoles terminacion placa: 2",app.puedeCircular(3,2));
-console.log("Jueves terminacion placa: 2",app.puedeCircular(4,2));
-console.log("Viernes terminacion placa: 3",app.puedeCircular(8,3));
-console.log("Sabado terminacion placa: 1",app.puedeCircular(7,2));
-console.log("Domingo terminacion placa: 2",app.puedeCircular(5,3));
+console.log(app.puedeCircular(0,1));
+console.log(app.puedeCircular(1,2));
+console.log(app.puedeCircular(3,2));
+console.log(app.puedeCircular(4,2));
+console.log(app.puedeCircular(8,3));
+console.log(app.puedeCircular(7,2));
+console.log(app.puedeCircular(5,3));
 
 
 
