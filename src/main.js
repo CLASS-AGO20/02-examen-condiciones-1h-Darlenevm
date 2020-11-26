@@ -11,126 +11,19 @@ export default class App {
         }
         return resultado.toFixed(2);
     }
-    costoRenta(kilometros){
-        let resultado;
-        if(kilometros < 50){
-            resultado = kilometros*3;
+    costoRenta(kilometros) {
+        if (kilometros<50) {
+            return kilometros*3;
         }
-        else if(kilometros >= 50 && kilometros<100){
-            resultado = kilometros*5;
+        else if (kilometros>=50 && kilometros<100) {
+            return kilometros*5;
         }
-        else if(kilometros >= 100 && kilometros <200){
-            resultado = kilometros*6;
+        else if (kilometros>=100 && kilometros<200) {
+            return kilometros*6;
         }
-        else if(kilometros >= 200){
-            resultado = kilometros*6.5;
+        else if (kilometros>=200) {
+            return kilometros*6.5;
         }
-        return resultado;
-    }
-    puedeCircular(dia, terminacion){
-        let flag;
-        switch(dia){
-            case 1:
-                if(terminacion == 0){
-                    flag = true;
-                }
-                else if(terminacion == 1){
-                    flag = false;
-                }
-                else if(terminacion == 2){
-                    flag = false;
-                }
-                else{
-                    flag = false;
-                }
-            break;
-            case 2:
-                if(terminacion == 0){
-                    flag = false;
-                }
-                else if(terminacion == 1){
-                    flag = true;
-                }
-                else if(terminacion == 2){
-                    flag = false;
-                }
-                else{
-                    flag = false;
-                }
-            break;
-            case 3:
-                if(terminacion == 0){
-                    flag = false;
-                }
-                else if(terminacion == 1){
-                    flag = false;
-                }
-                else if(terminacion == 2){
-                    flag = true;
-                }
-                else{
-                    flag = false;
-                }
-            break;
-            case 4:
-                if(terminacion == 0){
-                    flag = false;
-                }
-                else if(terminacion == 1){
-                    flag = false;
-                }
-                else if(terminacion == 2){
-                    flag = true;
-                }
-                else{
-                    flag = false;
-                }
-            break;
-            case 5:
-                if(terminacion == 0){
-                    flag = false;
-                }
-                else if(terminacion == 1){
-                    flag = false;
-                }
-                else if(terminacion == 2){
-                    flag = false;
-                }
-                else{
-                    flag = false;
-                }
-            break;
-            case 6:
-                if(terminacion == 0){
-                    flag = false;
-                }
-                else if(terminacion == 1){
-                    flag = false;
-                }
-                else if(terminacion == 2){
-                    flag = false;
-                }
-                else{
-                    flag = false;
-                }
-            break;
-            case 7:
-                if(terminacion == 0){
-                    flag = false;
-                }
-                else if(terminacion == 1){
-                    flag = false;
-                }
-                else if(terminacion == 2){
-                    flag = false;
-                }
-                else{
-                    flag = false;
-                }
-            break;
-            default: flag = false;
-        }
-        return flag;
     }
 
 }
@@ -147,10 +40,4 @@ console.log(app.costoRenta(150));
 console.log(app.costoRenta(250));
 console.log("");
 
-console.log("Lunes terminacion placa: 0",app.puedeCircular(0,1));
-console.log("Martes terminacion placa: 1",app.puedeCircular(1,2));
-console.log("Miercoles terminacion placa: 2",app.puedeCircular(3,2));
-console.log("Jueves terminacion placa: 2",app.puedeCircular(4,2));
-console.log("Viernes terminacion placa: 3",app.puedeCircular(8,3));
-console.log("Sabado terminacion placa: 1",app.puedeCircular(7,2));
-console.log("Domingo terminacion placa: 2",app.puedeCircular(5,3));
+
